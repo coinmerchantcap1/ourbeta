@@ -1,0 +1,1689 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title> Desketchain | An All Decentralized Design Fields Open Network </title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js">
+     </script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!--Get your own code at fontawesome.com-->
+<style>
+:root {
+  --baseColor: #606468;
+  --goldenrodColor: #ffb31a;
+  --iconColor: #1e90ff;
+  --spinColor: #FC3D6D;
+  --backgroundFirst: #0d0d0d;
+  --backgroundSecond: #fff;
+  --backgroundThird: #eee;
+}
+
+
+:root {
+  --background: #000;
+  --htmlFontSize: 100%;
+  --black-bckgrnd: #0d0d0d
+  --bodyBackgroundColor: #2c3338;
+  --bodyColor: var(--baseColor);
+  --bodyFontFamily: "Open Sans";
+  --bodyFontFamilyFallback: sans-serif;
+  --bodyFontSize: 0.875rem;
+  --bodyFontWeight: 400;
+  --bodyLineHeight: 1.5;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  background: var(--backgroundFirst);
+  color: var(--bodyColor);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+
+
+
+
+.designbtn {
+		    background-color: #0d0d0d;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 15vh;
+			width: 100%;
+			color: #fff;
+			text-align: center;
+		}
+		.designbtn h1 {
+			font-size: 8vw;
+			font-weight: 1000;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+		.designbtn p {
+		    color: var(--bodyColor);
+			font-size: 1.5rem;
+			margin: 0;
+			padding: 2rem 0;
+			max-width: 800px;
+		}
+		.designbtn button {
+			font-size: 1.5rem;
+			background-color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			padding: 1rem 2rem;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.designbtn button:hover {
+			background-color: #333333;
+			color: #ffffff;
+		}
+
+
+
+
+
+
+/* -----------
+======================
+Navbar Code
+======================
+------------ */
+.header {
+    /* From https://css.glass */
+background: var(--backgroundFirst);
+  height: 60px;
+  font-weight: ;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+}
+
+.img {
+  display: inline-block;
+  height: 50px;
+  z-index: 3;
+}
+
+.nav {
+    /* From https://css.glass */
+background: #26262680;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+border-bottom: 1px solid rgba(74, 67, 67, 0.51);
+  height: 70px;
+  font-weight: ;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  padding: 8px 8px 8px 8px;
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 20px;
+  margin-right: 0px;
+}
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 25px 8px 25px 8px;
+  text-decoration: none;
+  color: #b3b3b3;
+  font-family: "Catamaran", sans-serif;
+}
+
+.nav > .nav-links > a:hover,
+a:focus {
+  transform: translateY(-.2rem);
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: inherit;
+  }
+
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label,
+label:focus {
+  transform: translateY(-.2rem);
+  text-decoration: none;
+}
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 9px;
+    border-top: 4px solid var(--backgroundSecond);
+  }
+  .nav > .nav-links {
+    position: relative;
+    display: #0d0d0d0;
+    width: 100%;
+    background-color: black;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    top: -19px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+/* -----------
+======================
+Navbar Code End
+======================
+------------ */
+
+
+
+
+
+
+
+/* ---
+===================
+Hero Section
+===================
+--- */
+.hero {
+		    background-color: #0d0d0d;
+		    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1004%26quot%3b)' fill='none'%3e%3cpath d='M446.13 259.19a36.34 36.34 0 1 0-57.51 44.44z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1322.46 477.77a7.74 7.74 0 1 0-4.83 14.71z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1357.48 131.19L1410.91 131.19L1410.91 184.62L1357.48 184.62z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M920.16 210.82L965.45 210.82L965.45 222.22L920.16 222.22z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1243.73 481.35 a34.62 34.62 0 1 0 69.24 0 a34.62 34.62 0 1 0 -69.24 0z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M415.02 140.28a39.86 39.86 0 1 0-74.79 27.59z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M475.59 220.96a21.51 21.51 0 1 0-33.58 26.89z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1196.98 478.01a32.95 32.95 0 1 0 62.78-20.04z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M901.41 258.54a49.66 49.66 0 1 0-28.74-95.07z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M72.61 74.64a15.68 15.68 0 1 0-21.83-22.51z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M96.51 365.46L124.38 365.46L124.38 393.33L96.51 393.33z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M294.72 90.97L344.92 90.97L344.92 141.17L294.72 141.17z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M117.86 459.64 a10.93 10.93 0 1 0 21.86 0 a10.93 10.93 0 1 0 -21.86 0z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1044.62 487.91 a36.73 36.73 0 1 0 73.46 0 a36.73 36.73 0 1 0 -73.46 0z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1154.25 257.95 a14.11 14.11 0 1 0 28.22 0 a14.11 14.11 0 1 0 -28.22 0z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M546.32 363.72L587.37 363.72L587.37 404.77L546.32 404.77z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1278.48 306.48 a48.55 48.55 0 1 0 97.1 0 a48.55 48.55 0 1 0 -97.1 0z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1032.66 375.89L1066.65 375.89L1066.65 409.88L1032.66 409.88z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M1403.47 511.51L1441.31 511.51L1441.31 528.41L1403.47 528.41z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M231.25 86.25L243.43 86.25L243.43 131.56L231.25 131.56z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1008.87 288.62L1011.4 288.62L1011.4 291.15L1008.87 291.15z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M824.21 220.89 a41.31 41.31 0 1 0 82.62 0 a41.31 41.31 0 1 0 -82.62 0z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1388.35 65.71a43.88 43.88 0 1 0-19.04 85.67z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M928.28 467.36 a16.39 16.39 0 1 0 32.78 0 a16.39 16.39 0 1 0 -32.78 0z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M947.31 124.23L998.78 124.23L998.78 148.73L947.31 148.73z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M357.83 160.17a45.74 45.74 0 1 0-69.08 59.97z' stroke='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M1130.42 297.39a41.21 41.21 0 1 0 81.59-11.66z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M1130.01 169.73L1183.02 169.73L1183.02 187.73L1130.01 187.73z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M346.36 508.38 a19.34 19.34 0 1 0 38.68 0 a19.34 19.34 0 1 0 -38.68 0z' fill='rgba(8%2c 145%2c 178%2c 1)'%3e%3c/path%3e%3cpath d='M460.46 443.6a7.2 7.2 0 1 0-6.81 12.69z' fill='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3cpath d='M839.23 37.63L855.96 37.63L855.96 54.36L839.23 54.36z' fill='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M208.44 359.8L250.59 359.8L250.59 385.5L208.44 385.5z' stroke='rgba(5%2c 150%2c 105%2c 1)'%3e%3c/path%3e%3cpath d='M539.49 509.83L565.81 509.83L565.81 536.15L539.49 536.15z' stroke='rgba(192%2c 38%2c 211%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1004'%3e%3crect width='1440' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			width: 100%;
+			color: #fff;
+			text-align: center;
+		}
+		.hero h1 {
+			font-size: 10vw;
+			font-weight: 1000;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+		.hero p {
+		    color: #b3b3b3;
+			font-size: 1.5rem;
+			margin: 0;
+			padding: 2rem 0;
+			max-width: 800px;
+		}
+		.hero button {
+			font-size: 1.5rem;
+			background-color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			cursor: pointer;
+			display: inline;
+			transition: background-color 0.3s ease;
+		}
+		.hero button:hover {
+			background-color: #333333;
+			color: #ffffff;
+		}
+/* ---
+===================
+/Hero Section
+===================
+--- */
+
+
+
+
+
+
+
+/* ---
+===================
+Adverts Section
+===================
+--- */
+.Advert  {
+background: var(--iconColor);
+color: var(--backgroundSecond);
+text-align: center;
+width: 100%;
+padding: 15px;
+margin-top: 0px;
+margin-bottom: -2px;
+}
+/* ---
+===================
+/Adverts Section
+===================
+--- */
+
+
+
+
+
+/* ---
+===================
+Presentation Section
+===================
+--- */
+.token {
+  background-color: #eee;
+  height: 100hv;
+  padding: 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  margin-bottom: ;
+}
+
+
+.token .row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.token .column-66 {
+  float: left;
+  width: 55%;
+  padding: 0px;
+}
+
+.token .column-33 {
+  float: left;
+  width: 45%;
+  padding: 20px;
+}
+
+.token .large-font {
+  color: #000;
+  font-size: 40px;
+}
+
+
+
+.token img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+ .token .column-66,
+ .token .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+
+ .token img {
+    margin: auto;
+  }
+}
+
+
+.token a {
+    color: var(--iconColor);
+    text-align: left;
+    display: inline-block;
+  }
+
+
+
+video {
+  width: 100%;
+  height: auto;
+}
+/* ---
+===================
+/Presentation Section
+===================
+--- */
+
+
+
+
+
+/* -----------
+======================
+Integrated Sppace Section
+======================
+------------ */
+.about {
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1453' height='556' preserveAspectRatio='none' viewBox='0 0 1453 556'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1003%26quot%3b)' fill='none'%3e%3cpath d='M -153.52287541842261%2c435 C -104.92%2c389.8 -7.72%2c238.8 89.47712458157739%2c209 C 186.68%2c179.2 235.28%2c280 332.4771245815774%2c286 C 429.68%2c292 478.28%2c216 575.4771245815774%2c239 C 672.68%2c262 721.28%2c419 818.4771245815774%2c401 C 915.68%2c383 964.28%2c156.8 1061.4771245815773%2c149 C 1158.68%2c141.2 1207.28%2c353.8 1304.4771245815773%2c362 C 1401.68%2c370.2 1517.77%2c193.2 1547.4771245815773%2c190 C 1577.18%2c186.8 1471.9%2c314.8 1453%2c346' stroke='rgba(8%2c 145%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -333.9437046682571%2c381 C -285.34%2c339.4 -188.14%2c167 -90.94370466825711%2c173 C 6.26%2c179 54.86%2c390.4 152.0562953317429%2c411 C 249.26%2c431.6 297.86%2c294.2 395.0562953317429%2c276 C 492.26%2c257.8 540.86%2c337.2 638.0562953317428%2c320 C 735.26%2c302.8 783.86%2c174.8 881.0562953317428%2c190 C 978.26%2c205.2 1026.86%2c386.8 1124.0562953317428%2c396 C 1221.26%2c405.2 1301.27%2c252.2 1367.0562953317428%2c236 C 1432.85%2c219.8 1435.81%2c299.2 1453%2c315' stroke='rgba(8%2c 145%2c 178%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -35.94398232791329%2c331 C 12.66%2c308.2 109.86%2c194.4 207.0560176720867%2c217 C 304.26%2c239.6 352.86%2c451.4 450.0560176720867%2c444 C 547.26%2c436.6 595.86%2c196.8 693.0560176720867%2c180 C 790.26%2c163.2 838.86%2c352.8 936.0560176720867%2c360 C 1033.26%2c367.2 1081.86%2c215.4 1179.0560176720867%2c216 C 1276.26%2c216.6 1324.86%2c373.4 1422.0560176720867%2c363 C 1519.26%2c352.6 1658.87%2c167.4 1665.0560176720867%2c164 C 1671.24%2c160.6 1495.41%2c309.6 1453%2c346' stroke='rgba(192%2c 38%2c 211%2c 1)' stroke-width='2'%3e%3c/path%3e%3cpath d='M -160.3948991478578%2c380 C -111.79%2c345.2 -14.59%2c225.2 82.60510085214217%2c206 C 179.81%2c186.8 228.41%2c278.6 325.6051008521422%2c284 C 422.81%2c289.4 471.41%2c203.4 568.6051008521422%2c233 C 665.81%2c262.6 714.41%2c448.8 811.6051008521422%2c432 C 908.81%2c415.2 957.41%2c176.8 1054.6051008521422%2c149 C 1151.81%2c121.2 1200.41%2c276.8 1297.6051008521422%2c293 C 1394.81%2c309.2 1509.53%2c202.2 1540.6051008521422%2c230 C 1571.68%2c257.8 1470.52%2c391.6 1453%2c432' stroke='rgba(192%2c 38%2c 211%2c 1)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1003'%3e%3crect width='1453' height='556' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+width: 100%;
+padding: 20px;
+float: center;
+text-align: center;
+}
+.about .header-text {
+color: ;
+font-size: 40px;
+font-weight: 1000;
+text-align: center;
+line-height: vw;
+margin-top: 20px;
+}
+
+.about .note-text {
+color: #000;
+font-size: 20px;
+font-weight: 500;
+text-align: center;
+float: center;
+margin-top: 20px;
+}
+
+
+
+/* Float four columns side by side */
+/* Float four columns side by side */
+.focus-column {
+  float: left;
+  width: 33.3333333%;
+  padding: 0 15px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.focus-row {
+background: transparent;
+margin: 0 -5px;
+margin-top: 0rem;
+width: 100%;
+height: 250hv;
+}
+
+
+/* Clear floats after the columns */
+.focus-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .focus-column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.focus-card {
+    /* From https://css.glass */
+background: #26262680;
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+border: 1px solid rgba(74, 67, 67, 0.51);
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* Style the counter cards */
+.focus-card > p {
+  font-size 22px;
+  text-align: center;
+}
+
+.about .download-doc {
+background: transparent;
+
+  border: 1px solid #292929;
+  border-radius: 1rem;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  padding: 8px 20px;
+  transition: .1s;
+  text-decoration: none;
+}
+
+.about svg {
+fill: #3333ff;
+stroke: #FFF;
+height: 1.935em;
+width: 1.935em;
+}
+/* -----------
+======================
+/Integrated Space Section
+======================
+------------ */
+
+
+
+.design {
+		    background-color: #0d0d0d;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 25vh;
+			width: 100%;
+			color: #fff;
+			text-align: center;
+			margin-top: 150px;
+		}
+		.design h1 {
+			font-size: 7vw;
+			font-weight: 1000;
+			margin: 0;
+			padding: 0;
+			line-height: 1;
+		}
+		.design p {
+		    color: var(--bodyColor);
+			font-size: 1.5rem;
+			margin: 0;
+			padding: 2rem 0;
+			max-width: 800px;
+		}
+		.design button {
+			font-size: 1.5rem;
+			background-color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			padding: 1rem 2rem;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.design button:hover {
+			background-color: #333333;
+			color: #ffffff;
+		}
+
+
+
+
+
+
+
+
+
+
+
+/*  --typing effect--  */
+#spin {
+  color: #9e4be7;
+  font-weight: ;
+  opacity: 1; filter: #9c2be7;
+}
+
+#spin:after {
+  content:"";
+  animation: spin 30s linear infinite;
+}
+
+@keyframes spin {
+  0% { content:"Applied arts";}
+  10% { content:"Architecture";}
+  20% { content:"Automotive";}
+  30% { content:"Biological";}
+  40% { content:"Cartographic";}
+  50% { content: "Configuration";}
+  60% { content: "Communication";}
+  70% { content: "Costume";}
+  80% { content: "Management";}
+  90% { content: "Engineering";}
+
+  100% { content:"Fashion";}
+  110% { content:"Floral";}
+  120% { content:"Game";}
+  130% { content:"Graphic";}
+  140% { content:"Information";}
+  150% { content: "Industrial";}
+  160% { content: "Instruc";}
+  170% { content: "Interac";}
+  180% { content: "Interior";}
+  190% { content: "Landsc";}
+}
+/*  --/tping effect--  */
+
+
+
+
+
+
+
+
+.bunches {
+		    background-color: #0d0d0d;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100vh;
+			width: 100%;
+			padding: 20px;
+			color: #fff;
+			text-align: center;
+		}
+		.bunches h1 {
+			font-size: 40px;
+			font-weight: 1000;
+			margin: 0;
+			padding: 0;
+			line-height: 1.2;
+		}
+		.bunches p {
+		    color: var(--bodyColor);
+			font-size: 1.5rem;
+			margin: 0;
+			padding: 2rem 0;
+			max-width: 800px;
+		}
+		.bunches button {
+			font-size: 1.5rem;
+			background-color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			padding: 1rem 2rem;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+		.bunches button:hover {
+			background-color: #333333;
+			color: #ffffff;
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about {
+background-color: transparent;
+width: 100%;
+padding: 30px;
+}
+
+.about h1{
+color: #000;
+width; 70%;
+margin-top: 30px;
+text-align: center;
+font-weight: 1000;
+}
+
+.about p {
+color: inherit;
+padding: 30px;
+text-align: center;
+font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/*
+======================
+Coin slide names============
+======================
+*/
+
+/* ---
+===================
+Tabs Section
+===================
+--- */
+table {
+/* From https://css.glass */
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1462' height='539' preserveAspectRatio='none' viewBox='0 0 1462 539'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1734%26quot%3b)' fill='none'%3e%3cpath d='M184.21 392.63L278.61 447.13L278.61 556.13L184.21 610.63L89.81 556.13L89.81 447.13zM278.61 229.13L373.01 283.63L373.01 392.63L278.61 447.13L184.21 392.63L184.21 283.63zM561.81 392.63L656.21 447.13L656.21 556.13L561.81 610.63L467.41 556.13L467.41 447.13zM656.21 229.13L750.61 283.63L750.61 392.63L656.21 447.13L561.81 392.63L561.81 283.63zM750.61 392.63L845.01 447.13L845.01 556.13L750.61 610.63L656.21 556.13L656.21 447.13zM845.01 -97.87L939.41 -43.37L939.41 65.63L845.01 120.13L750.61 65.63L750.61 -43.37zM939.41 65.63L1033.8 120.13L1033.8 229.13L939.41 283.63L845.01 229.13L845.01 120.13zM1222.6 229.13L1317 283.63L1317 392.63L1222.6 447.13L1128.2 392.63L1128.2 283.63zM1317 392.63L1411.4 447.13L1411.4 556.13L1317 610.63L1222.6 556.13L1222.6 447.13z' stroke='rgba(0%2c 0%2c 0%2c 0)' stroke-width='2'%3e%3c/path%3e%3cpath d='M173.31 392.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM267.71 447.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM267.71 556.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM173.31 610.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM78.91 556.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM78.91 447.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM267.71 229.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM362.11 283.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM362.11 392.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM173.31 283.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM550.91 392.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM645.31 447.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM645.31 556.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM550.91 610.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM456.51 556.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM456.51 447.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM645.31 229.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM739.71 283.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM739.71 392.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM550.91 283.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM834.11 447.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM834.11 556.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM739.71 610.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM834.11 -97.87 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM928.51 -43.37 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM928.51 65.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM834.11 120.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM739.71 65.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM739.71 -43.37 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1022.9 120.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1022.9 229.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM928.51 283.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM834.11 229.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1211.7 229.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1306.1 283.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1306.1 392.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1211.7 447.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1117.3 392.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1117.3 283.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1400.5 447.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1400.5 556.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1306.1 610.63 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0zM1211.7 556.13 a10.9 10.9 0 1 0 21.8 0 a10.9 10.9 0 1 0 -21.8 0z' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/path%3e%3cpath d='M51.18 470.54L129.99 516.04L129.99 607.04L51.18 652.54L-27.63 607.04L-27.63 516.04zM366.42 197.54L445.23 243.04L445.23 334.04L366.42 379.54L287.61 334.04L287.61 243.04zM602.85 61.04L681.66 106.54L681.66 197.54L602.85 243.04L524.04 197.54L524.04 106.54zM524.04 470.54L602.85 516.04L602.85 607.04L524.04 652.54L445.23 607.04L445.23 516.04zM681.66 -75.46L760.47 -29.96L760.47 61.04L681.66 106.54L602.85 61.04L602.85 -29.96zM760.47 61.04L839.29 106.54L839.29 197.54L760.47 243.04L681.66 197.54L681.66 106.54zM681.66 470.54L760.47 516.04L760.47 607.04L681.66 652.54L602.85 607.04L602.85 516.04zM1075.72 61.04L1154.53 106.54L1154.53 197.54L1075.72 243.04L996.91 197.54L996.91 106.54zM1075.72 334.04L1154.53 379.54L1154.53 470.54L1075.72 516.04L996.91 470.54L996.91 379.54zM1233.34 61.04L1312.15 106.54L1312.15 197.54L1233.34 243.04L1154.53 197.54L1154.53 106.54zM1154.53 197.54L1233.34 243.04L1233.34 334.04L1154.53 379.54L1075.72 334.04L1075.72 243.04zM1233.34 334.04L1312.15 379.54L1312.15 470.54L1233.34 516.04L1154.53 470.54L1154.53 379.54zM1390.96 61.04L1469.77 106.54L1469.77 197.54L1390.96 243.04L1312.15 197.54L1312.15 106.54zM1390.96 334.04L1469.77 379.54L1469.77 470.54L1390.96 516.04L1312.15 470.54L1312.15 379.54z' stroke='url(%23SvgjsLinearGradient1735)' stroke-width='2'%3e%3c/path%3e%3cpath d='M42.08 470.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM120.89 516.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM120.89 607.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM42.08 652.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM-36.73 607.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM-36.73 516.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM357.32 197.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM436.13 243.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM436.13 334.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM357.32 379.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM278.51 334.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM278.51 243.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM593.75 61.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM672.56 106.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM672.56 197.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM593.75 243.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM514.94 197.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM514.94 106.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM514.94 470.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM593.75 516.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM593.75 607.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM514.94 652.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM436.13 607.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM436.13 516.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM672.56 -75.46 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM751.37 -29.96 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM751.37 61.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM593.75 -29.96 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM830.19 106.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM830.19 197.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM751.37 243.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM672.56 470.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM751.37 516.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM751.37 607.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM672.56 652.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1066.62 61.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1145.43 106.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1145.43 197.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1066.62 243.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM987.81 197.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM987.81 106.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1066.62 334.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1145.43 379.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1145.43 470.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1066.62 516.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM987.81 470.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM987.81 379.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1224.24 61.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1303.05 106.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1303.05 197.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1224.24 243.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1224.24 334.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1303.05 379.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1303.05 470.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1224.24 516.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1381.86 61.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1460.67 106.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1460.67 197.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1381.86 243.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1381.86 334.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1460.67 379.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1460.67 470.54 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0zM1381.86 516.04 a9.1 9.1 0 1 0 18.2 0 a9.1 9.1 0 1 0 -18.2 0z' fill='url(%23SvgjsLinearGradient1735)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1734'%3e%3crect width='1462' height='539' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='230.7036' y1='-230.7459' x2='1231.2964' y2='769.7459' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1735'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(158%2c 75%2c 231%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+padding: 30px;
+width: 100%;
+}
+
+table > h2 {
+color: #fff;
+}
+
+td, th {
+  background: #26262680;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+border: 1px solid rgba(74, 67, 67, 0.51);
+  width: 80%;
+  color: #fff;
+  border: none;
+  text-align: left;
+  font-size: 23px;
+  padding: 25px;
+}
+
+tr:nth-child(even) {
+  color: #fff;
+}
+
+
+
+
+
+/* ---
+===================
+/Tabs Section
+===================
+--- */
+
+
+
+
+
+.distribution {
+  margin-top: 0px;
+  padding: 70px;
+}
+
+.distribution h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.distribution ul {
+  list-style: none;
+  margin-top: 0px;
+  padding: 0;
+}
+
+.distribution li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.distribution .label {
+  font-size: 25px;
+  color: #333;
+}
+
+.distribution .value {
+  font-size: 20px;
+  color: #fff;
+}
+
+/*
+======================
+Coin slide names end============
+======================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+.timeline:before {
+  content: '';
+  position:absolute;
+  height:100%;
+  left:50%;
+  width:2px;
+  top:-20px;
+  background:#fff;
+  z-index:1;
+}
+.timeline{
+  position:relative;
+  margin: 50px auto;
+  width:1000px;
+  padding:50px 0;
+}
+
+
+.timeline ul{
+  margin:0;
+  padding:0 ;
+}
+
+.timeline ul li{
+  list-style:none;
+  box-sizing:border-box;
+  line-height:normal;
+  position:relative;
+  width:50%;
+  padding: 40px 70px;
+}
+
+.timeline ul li .right_content h2{
+  color: #9e4be7;
+  padding:0px 2px 18px 0px;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+
+.left_content{
+  padding-bottom:20px;
+}
+
+.timeline ul li:nth-child(odd):before{
+  content: '';
+  position:absolute;
+  width:10px;
+  height:10px;
+  background: #9e4be7;
+  border-radius:50%;
+  box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
+  right:-6px;
+  top:24px;
+  z-index:1;
+}
+
+.timeline ul li:nth-child(even):before{
+  content: '';
+  position:absolute;
+  width:10px;
+  height:10px;
+ background: #9e4be7;
+  border-radius:50%;
+  box-shadow: 0 0 0 3px rgba(58,112,239,0.2);
+  left:-6px;
+  top:24px;
+}
+
+.timeline ul li:nth-child(odd) .left_content{
+  position:absolute;
+  top:12px;
+  right:-165px;
+  margin:0;
+  padding:8px 16px;
+
+  color:#fff;
+  box-shadow:0 0 0 3px rgba(59,112,239,0.3);
+  border-radius:18px;
+
+}
+
+.timeline ul li:nth-child(even) .left_content{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  margin:0;
+  padding:8px 16px;
+
+  color:#fff;
+  box-shadow:0 0 0 3px rgba(59,112,239,0.3);
+  border-radius:18px;
+
+}
+
+
+@media (max-width: 1000px){
+
+  .timeline{
+    width:100%;
+  }
+}
+
+@media (max-width: 767px){
+  .timeline{
+    width:100%;
+  }
+  .timeline:before{
+    left:20px;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even){
+    width:100%;
+    text-align:left;
+   padding-left:50px;
+  }
+
+  .timeline ul li:nth-child(odd):before
+    {
+    top:-18px;
+    left:16px;
+
+  }
+  .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+
+    .timeline ul li:nth-child(odd) .left_content,
+  .timeline ul li:nth-child(even) .left_content
+  {
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  background-color: black;
+  padding: 64px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 55%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 45%;
+  padding: 20px;
+}
+
+.large-font {
+color: #000;
+  font-size: 48px;
+}
+
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #04AA6D;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+
+
+
+
+
+
+
+
+/* ---
+===================
+Footer Section
+===================
+--- */
+footer{
+  position: relative;
+  background: #000;
+  width: 100%;
+  bottom: -50px;
+}
+footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  background: #000;
+}
+footer .content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+.content .top .logo-details{
+  color: #fff;
+  font-size: 30px;
+}
+
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.content .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #140B5C;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}
+footer .bottom-details{
+  width: 100%;
+background: #2c303a;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 5px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}
+/* ---
+===================
+/Footer Section
+===================
+--- */
+
+
+</style>
+</head>
+<body>
+
+
+
+<!-------
+ ======================
+ Navbar Section============
+ ======================
+ ------>
+ <header class="header">
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <span><img class="img" src="https://assets.brandfolder.com/pl546j-7le8zk-btwjnu/view@2x.png?v=1586891797" /></span>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+
+  <div class="nav-links">
+    <a href="#P1">Graphpaper</a>
+    <a href="#P2">Intro</a>
+    <a href="#P3">Designers</a>
+    <a href="#P4">Ecosystem</a>
+    <a href="#P5">Roadmap</a>
+  </div>
+</div>
+</header>
+  <!-------
+ ======================
+ / Navbar Section============
+ ======================
+ ------>
+
+
+
+
+
+
+
+
+
+<!-----
+===================
+Hero Section
+===================
+---->
+<section id="P1" class="hero">
+		<h1>Design Bridge</h1>
+		<p>
+          A decentralized <span id="spin"></span> design platform for creatives and innovators.
+        </p>
+        <p>
+		<button style="background: #9e4be7;">Graphpaper V1</button>
+        <button>Buy on DTN</button>
+        </p>
+	</section>
+<!-----
+===================
+/Hero Section
+===================
+---->
+
+
+
+
+
+
+<!-----
+===================
+Adverts Section
+===================
+---->
+<div style="text-align:center">
+  <p class="Advert">
+        <a>Join The Designtralized Studio For Better Tomorrow <text style="font-size: 20px; font-weight: 1000;">&rarr;</text>
+        </a>
+    </p>
+</div>
+<!-----
+===================
+/Adverts Section
+===================
+---->
+
+
+
+
+
+
+<!-----
+===================
+Presentation Section
+===================
+---->
+<div id="P2" class="token">
+  <div class="row">
+    <div class="column-33">
+       <!--- Video --->
+      <video src="http://media.w3.org/2010/05/sintel/trailer.mp4" width="400" controls>
+  <source src="mov_bbb.mp4" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+        <!--- Video --->
+    </div>
+    <div class="column-66">
+      <h1 class="large-font"><b>Presentation</b></h1>
+      <p style="font-size: 20px;  text-align: justify; text-justify: inter-word;">
+        Designtralized is a platform that empowers designers,
+          creative professionals, and businesses to collaborate and
+          create. The platform is fueled by the DFT token, which
+          enables seamless transactions, incentivizes community
+          participation, and ensures transparency. Discover more
+          about the DFT project, and features
+          by watching our presentation video or read and build a
+          decentralized creative economy with you.
+      </p>
+
+        <a class="button" href="http://localhost:63342/The%20Open%20Design%20Network/Ecosystem.html?_ijt=cf3ojhoc2ufou7sgs7vibr6ng6">Explore more</a>
+    </div>
+  </div>
+</div>
+<!-----
+===================
+/Presentattion Section
+===================
+---->
+
+
+
+
+
+
+
+<!-----------
+======================
+/Integrated Space Section
+======================
+------------>
+<section id="P3" class="design">
+		<h1>
+        Bridge Gap
+        </h1>
+		<p><text style="border-left: 2px solid #9e4be7; border-right: 2px solid #9e4be7; color: #fff; padding: 3px 10px;">Discover</text>
+             the marketplace, managing, and contest three key elements of the Designtralized ecosystem,
+            each serving a specific purpose in empowering designers and design enthusiasts.
+        </p>
+	</section>
+
+<section class="about">
+  <div class="focus-row">
+<div class="focus-column">
+    <div class="focus-card">
+      <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="fill: #0891b2;"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M190.4 32.6c4.8-12.4-1.4-26.3-13.8-31s-26.3 1.4-31 13.8L113.1 100c-7.9 20.7-3 44.1 12.7 59.7l57.4 57.4-80.4-26.8c-2.4-.8-4.3-2.7-5.1-5.1L78.8 128.4C74.6 115.8 61 109 48.4 113.2S29 131 33.2 143.6l18.9 56.8c5.6 16.7 18.7 29.8 35.4 35.4L148.1 256 87.6 276.2c-16.7 5.6-29.8 18.7-35.4 35.4L33.2 368.4C29 381 35.8 394.6 48.4 398.8s26.2-2.6 30.4-15.2l18.9-56.8c.8-2.4 2.7-4.3 5.1-5.1l80.4-26.8-57.4 57.4c-15.6 15.6-20.6 39-12.7 59.7l32.5 84.6c4.8 12.4 18.6 18.5 31 13.8s18.5-18.6 13.8-31l-32.5-84.6c-1.1-3-.4-6.3 1.8-8.5L192 353.9c1 52.1 43.6 94.1 96 94.1s95-41.9 96-94.1l32.3 32.3c2.2 2.2 2.9 5.6 1.8 8.5l-32.5 84.6c-4.8 12.4 1.4 26.3 13.8 31s26.3-1.4 31-13.8L462.9 412c7.9-20.7 3-44.1-12.7-59.7l-57.4-57.4 80.4 26.8c2.4 .8 4.3 2.7 5.1 5.1l18.9 56.8c4.2 12.6 17.8 19.4 30.4 15.2s19.4-17.8 15.2-30.4l-18.9-56.8c-5.6-16.7-18.7-29.8-35.4-35.4L427.9 256l60.5-20.2c16.7-5.6 29.8-18.7 35.4-35.4l18.9-56.8c4.2-12.6-2.6-26.2-15.2-30.4s-26.2 2.6-30.4 15.2l-18.9 56.8c-.8 2.4-2.7 4.3-5.1 5.1l-80.4 26.8 57.4-57.4c15.6-15.6 20.6-39 12.7-59.7L430.4 15.4C425.6 3 411.8-3.2 399.4 1.6s-18.5 18.6-13.8 31l32.5 84.6c1.1 3 .4 6.3-1.8 8.5L368 174.1V160c0-31.8-18.6-59.3-45.5-72.2c-9.1-4.4-18.5 3.3-18.5 13.4V112c0 8.8-7.2 16-16 16s-16-7.2-16-16V101.2c0-10.1-9.4-17.7-18.5-13.4C226.6 100.7 208 128.2 208 160v14.1l-48.3-48.3c-2.2-2.2-2.9-5.6-1.8-8.5l32.5-84.6z"/></svg></h1>
+        <h2 style="color: #0891b2;">Marketplace</h2>
+      <p>
+The design marketplace is a platform where designers can showcase their skills and
+          sell their work to interested buyers through decentralized network without third party.
+      </p>
+      <a class="download-doc" download="#" style="border: 1px solid #0891b2;">Learn more &rarr;</a>
+    </div>
+  </div>
+
+    <div class="focus-column">
+    <div class="focus-card">
+      <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="fill: #c026d3;"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M247.6 8C389.4 8 496 118.1 496 256c0 147.1-118.5 248-248.4 248C113.6 504 0 394.5 0 256 0 123.1 104.7 8 247.6 8zm.8 44.7C130.2 52.7 44.7 150.6 44.7 256c0 109.8 91.2 202.8 203.7 202.8 103.2 0 202.8-81.1 202.8-202.8.1-113.8-90.2-203.3-202.8-203.3zm3.6 53.2c2.8-.3 11.5 1 11.5 11.5l6.6 107.2 4.9-59.3c0-6 4.7-10.6 10.6-10.6 5.9 0 10.6 4.7 10.6 10.6 0 2.5-.5-5.7 5.7 81.5l5.8-64.2c.3-2.9 2.9-9.3 10.2-9.3 3.8 0 9.9 2.3 10.6 8.9l11.5 96.5 5.3-12.8c1.8-4.4 5.2-6.6 10.2-6.6h58v21.3h-50.9l-18.2 44.3c-3.9 9.9-19.5 9.1-20.8-3.1l-4-31.9-7.5 92.6c-.3 3-3 9.3-10.2 9.3-3 0-9.8-2.1-10.6-9.3 0-1.9.6 5.8-6.2-77.9l-5.3 72.2c-1.1 4.8-4.8 9.3-10.6 9.3-2.9 0-9.8-2-10.6-9.3 0-1.9.5 6.7-5.8-87.7l-5.8 94.8c0 6.3-3.6 12.4-10.6 12.4-5.2 0-10.6-4.1-10.6-12l-5.8-87.7c-5.8 92.5-5.3 84-5.3 85.9-1.1 4.8-4.8 9.3-10.6 9.3-3 0-9.8-2.1-10.6-9.3 0-.7-.4-1.1-.4-2.6l-6.2-88.6L182 348c-.7 6.5-6.7 9.3-10.6 9.3-5.8 0-9.6-4.1-10.6-8.9L149.7 272c-2 4-3.5 8.4-11.1 8.4H87.2v-21.3H132l13.7-27.9c4.4-9.9 18.2-7.2 19.9 2.7l3.1 20.4 8.4-97.9c0-6 4.8-10.6 10.6-10.6.5 0 10.6-.2 10.6 12.4l4.9 69.1 6.6-92.6c0-10.1 9.5-10.6 10.2-10.6.6 0 10.6.7 10.6 10.6l5.3 80.6 6.2-97.9c.1-1.1-.6-10.3 9.9-11.5z"/></svg></h1>
+        <h1 style="color: #c026d3;">Spider Tools</h1>
+      <p>
+Design resource management is another crucial aspect of the Designtralized ecosystem,
+          allowing designers to manage their workflow, track their progress,
+          and collaborate with others in real-time.
+      </p>
+      <a class="download-doc" download="#" style="border: 1px solid #c026d3;">Discover more &rarr;</a>
+    </div>
+  </div>
+
+  <div class="focus-column">
+    <div class="focus-card">
+      <h1><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="fill: #059669;"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M384 32C419.3 32 448 60.65 448 96V416C448 451.3 419.3 480 384 480H64C28.65 480 0 451.3 0 416V96C0 60.65 28.65 32 64 32H384zM384 80H64C55.16 80 48 87.16 48 96V416C48 424.8 55.16 432 64 432H384C392.8 432 400 424.8 400 416V96C400 87.16 392.8 80 384 80z"/></svg></h1>
+        <h2 style="color: #059669;">Design Fields</h2>
+      <p>
+ Contest system is an exciting feature of the Designtralized ecosystem that allows
+          designers to participate in design contests and showcase their
+          skills.
+      </p>
+      <a class="download-doc" download="#" style="border: 1px solid #059669;">Join us &rarr;</a>
+    </div>
+  </div>
+    </div>
+</section>
+<!-----------
+======================
+/Integrated Space Section
+======================
+------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+===================
+Tokenomics Section
+===================
+-->
+
+<!--
+===================
+/Tokenomics Section
+===================
+-->
+
+
+
+
+
+<section class="design">
+		<h1>
+          Tokenomics
+        </h1>
+		<p><text style="border-left: 2px solid #9e4be7; border-right: 2px solid #9e4be7; color: #fff; padding: 3px 10px;">Discover</text>
+             more about Designtralized Tokenomics,
+            Token Distribution, Token Allocation, and the entire ecosystem
+            by downloading our Graphpaper (Whitepper) to understand the concept.
+        </p>
+	</section>
+
+
+
+<table>
+  <tr>
+    <td>Token Name: <text style="color: #9e4be7;">Designtralized</text></td>
+  </tr>
+  <tr>
+    <td>Token Symbol: <text style="color: #9e4be7;">DTN</text></td>
+  </tr>
+  <tr>
+    <td>Total Supply: <text style="color: #9e4be7;">100,000,000,000</text></td>
+  </tr>
+  <tr>
+    <td>Circulating Supply: <text style="color: #9e4be7;">50,000,000,000</text></td>
+  </tr>
+  <tr>
+    <td>Token Utility: <text style="color: #9e4be7;">Payment services</text></td>
+  </tr>
+</table>
+
+<section class="designbtn">
+		<button>Graphpaper</button>
+	</section>
+
+
+
+
+
+
+<section class="design">
+		<h1>
+          Roadmap
+        </h1>
+		<p><text style="border-left: 2px solid #9e4be7; border-right: 2px solid #9e4be7; color: #fff; padding: 3px 10px;">Follow</text>
+             the step by step Designtralized milestone for understand
+            where the project heading to between and future.
+        </p>
+	</section>
+
+
+<div class="timeline">
+  <ul>
+    <li>
+      <div class="right_content">
+        <h2>Sample Text</h2>
+        <p>
+            Idea and concept development<br>
+            Research and market analysis<br>
+            Whitepaper and website creation<br>
+            Initial team formation
+        </p>
+      </div>
+      <div class="left_content">
+        <h3>January 2022</h3>
+      </div>
+    </li>
+    <li>
+      <div class="right_content">
+        <h2>Sample Text</h2>
+        <p>
+            Token creation and distribution<br>
+            Listing on major exchanges<br>
+            Community building and outreach<br>
+Launch of Designtralized repository<br>
+Launch of Designtralized Studio<br>
+Development of Designtralized Marketplace<br>
+Formation of Designtralized Research division
+        </p>
+      </div>
+      <div class="left_content">
+        <h3>February 2023</h3>
+      </div>
+    </li>
+    <li>
+      <div class="right_content">
+        <h2>Sample Text</h2>
+        <p>
+            Release of Designtralized Governance platform<br>
+Launch of Designtralized Foundation<br>
+Expansion of Designtralized Research efforts<br>
+Partnership and integration with other projects<br>
+Continued growth of DFT community
+        </p>
+      </div>
+      <div class="left_content">
+        <h3>March 2024 </h3>
+      </div>
+    </li>
+    <li>
+      <div class="right_content">
+        <h2>Sample Text</h2>
+        <p>
+            Launch of Designtralized Contest system<br>
+Continued development of Designtralized Marketplace<br>
+Expansion of Designtralized ecosystem through strategic partnerships<br>
+Integration with other DeFi projects<br>
+Further community building and outreach
+        </p>
+      </div>
+      <div class="left_content">
+        <h3>April 2019 </h3>
+      </div>
+    </li>
+    <li>
+      <div class="right_content">
+        <h2>Sample Text</h2>
+        <p>
+            Launch of DFT stablecoin<br>
+Continued expansion and improvement of DFT ecosystem<br>
+Continued growth and development of DFT community<br>
+Further integration with other blockchain projects and protocols<br>
+Continued research and innovation in the field of design and technology.
+        </p>
+      </div>
+      <div class="left_content">
+        <h3>May 2019 </h3>
+      </div>
+    </li>
+    <li>
+      <div class="right_content">
+        <h2>Sample Text</h2>
+        <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly
+          journalistic styles, a paragraph can be just one sentence long.
+        </p>
+      </div>
+      <div class="left_content">
+        <h3>June 2019 </h3>
+      </div>
+    </li>
+    <li>
+      <div class="right_content">
+        <h2>Sample Text</h2>
+        <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly
+          journalistic styles, a paragraph can be just one sentence long.
+        </p>
+      </div>
+      <div class="left_content">
+        <h3>July 2019 </h3>
+      </div>
+    </li>
+    <li>
+      <div class="right_content">
+        <h2>Sample Text</h2>
+        <p>A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly
+          journalistic styles, a paragraph can be just one sentence long.
+        </p>
+      </div>
+      <div class="left_content">
+        <h3>August 2019 </h3>
+      </div>
+    </li>
+    <div style="clear:both;"></div>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----
+==================
+Footer Section
+==================
+------->
+<footer>
+    <section class="design" style="background: transparent;">
+		<h1 style="background: #000; padding: 20px 50px; border-radius: 50px;">
+          Stay Update
+        </h1>
+		<p><text style="border-left: 2px solid #9e4be7; border-right: 2px solid #9e4be7; color: #fff; padding: 3px 10px;">Meet</text>
+             the community members through our social media handles and build together.
+        </p>
+	</section>
+
+
+	<div class="content">
+		<div class="top">
+		</div>
+		<div class="link-boxes">
+			<ul class="box">
+				<li><a href="#">Github</a></li>
+				<li><a href="#">Reddit</a></li>
+			</ul>
+
+			<ul class="box">
+				<li><a href="#">Telegram</a></li>
+				<li><a href="#">Discord</a></li>
+			</ul>
+
+	<ul class="box">
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Tiktok</a></li>
+			</ul>
+
+			<ul class="box">
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Instagram</a></li>
+			</ul>
+
+		</div>
+	</div>
+	    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2021 <a href="#">Sitesoch.</a></span>
+        <span class="policy_terms">
+          <a href="#">Powered by InkLab</a>
+
+        </span>
+      </div>
+    </div>
+</footer>
+<!-----
+==================
+/Footer Section
+==================
+------->
+</body>
+</html>
